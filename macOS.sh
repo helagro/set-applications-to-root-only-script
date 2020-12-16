@@ -9,7 +9,7 @@ then
 else
     PERMISSION="470"
 
-    RUN_SCRIPT_PATH="createdShortcuts/"$1".sh"
+    RUN_SCRIPT_PATH="createdShortcuts/"$1".command"
     touch $RUN_SCRIPT_PATH
     chmod "777" $RUN_SCRIPT_PATH
     echo "sudo "$PROGRAM_PATH"/contents/MacOS/"$1 > $RUN_SCRIPT_PATH
